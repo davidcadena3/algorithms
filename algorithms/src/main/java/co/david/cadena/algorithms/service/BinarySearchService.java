@@ -55,7 +55,7 @@ public class BinarySearchService {
 			if (guess == item) {
 				log.info(tId + " -> item found at " + middle + " position");
 				response.setMatchPosition(middle);
-				response.setIterations(it + 1);
+				response.setIterations(it);
 				return;
 			} else if (guess > item) {
 				high = middle - 1;
